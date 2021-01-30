@@ -1,0 +1,51 @@
+body {
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    color: hsl(237, 12%, 33%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 0.8rem;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    background-color: white;
+    border-radius: 15px;
+    height: 70%;
+    width: 850px;
+    padding: 10px;
+  }
+
+  .card__section {
+    padding: 10px;
+  }
+
+  .card__question {
+    font-weight: normal;
+    cursor: pointer;
+  }
+
+  .card__question:hover {
+      color: hsl(14, 88%, 65%);
+      transition: color 1s;
+  }
+
+  .card__question:active {
+    color: hsl(238, 29%, 16%);
+  }
+
+  .card__question::after{
+      background: url('./images/icon-arrow-down.svg') no-repeat;
+      background-position: center; 
+      content: '';
+      height: 20px;
+      width: 20px;
+      float: right;
+  }
+
+  .card__answer--hide {
+      display: none;
+  }
