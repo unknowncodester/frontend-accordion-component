@@ -1,77 +1,73 @@
 body {
-    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
-    color: hsl(237, 12%, 33%);
-    font-family: 'Kumbh Sans', sans-serif;
-    font-size: 0.6rem;
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  color: hsl(237, 12%, 33%);
+  font-family: Kumbh Sans;
+  font-size: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
 }
 
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .card {
-    background-color: white;
-    border-radius: 15px;
-    height: 400px;
-    width: 850px;
-    padding: 10px;
-  }
-
-  .card__image {
-      position: absolute;
-      height: 100px;
-      width: 100px;
-      top: 50%;
-  }
-
-  .card__faqs {
-      float: right;
-      padding: 10px;
-      width: 50%;
-  }
-
-  .card__title {
-    margin-bottom: 20px;
-  }
-
-  .card__section {
-    border-bottom: solid 1px hsl(240, 5%, 91%);
-  }
-
-  .card__question {
-    font-weight: normal;
-    cursor: pointer;
-  }
-
-  .card__question:hover {
-      color: hsl(14, 88%, 65%);
-  }
-
-  .card__question:active {
-    color: hsl(238, 29%, 16%);
-  }
-
-  .card__question::after {
-      background: url('./images/icon-arrow-down.svg') no-repeat;
-      background-position: center; 
-      content: '';
-      height: 20px;
-      width: 20px;
-      float: right;
-  }
-
-  .card__question--flipped::after {
-    background: url('./images/icon-arrow-down.svg') no-repeat;
-    background-position: center; 
-    content: '';
-    height: 20px;
-    width: 20px;
-    float: right;
-    transform: rotate(-180deg);
+.card {
+  background-color: white;
+  border-radius: 15px;
+  height: 425px;
+  width: 750px;    
 }
 
-  .card__answer--hide {
-      display: none;
-  }
+.card__image {
+  position: relative;
+  width: 350px;
+}
+
+.card__image--woman {
+  top: 10%;
+  left: -10%;
+}
+
+.card__image--box {
+  top: -35%;
+  left: -10%;
+}
+
+.card__faqs {
+  padding: 10px;
+  width: 300px;
+  height: auto;
+  position: relative;
+  top: -100%;
+  left: 50%;
+}
+
+.card__title {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.card__section {
+  border-bottom: solid 1px hsl(240, 5%, 91%);
+}
+
+.card__question {
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.card__question:hover {
+  color: hsl(14, 88%, 65%);
+}
+
+.card__question::after {
+  background: url('./images/icon-arrow-down.svg') no-repeat;
+  background-position: center; 
+  content: '';
+  height: 20px;
+  width: 20px;
+  float: right;
+}
+
+.card__question--active::after {
+  transform: rotate(180deg);
+}
