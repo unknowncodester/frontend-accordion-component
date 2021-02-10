@@ -8,8 +8,8 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href='http://fonts.googleapis.com/css?family=Kumbh+Sans:400,700' rel='stylesheet' type='text/css'>
-  <link href='./styles.css' rel='stylesheet' type='text/css'>  
-  
+  <link href='./styles.css' rel='stylesheet' type='text/css'>
+
   <script src="./accordion.js"></script>
 
   <title>FAQ Accordion Card</title>
@@ -17,33 +17,83 @@
 
 <body>
   <div class="card">
-      <div class="card__image card__image--woman">
-        <img src="./images/illustration-woman-online-desktop.svg" height="300" width="350"/>
-      </div>
-      <div class="card__image card__image--box">
-          <img src="./images/illustration-box-desktop.svg" height="150" width="150"/>
-      </div>
-      <div class="card__faqs">
-        <h2 class="card__title">
-          FAQ
-        </h2>
-        <article class="card__section">
-          <h3 class="card__question">
+    <div class="card__image card__image--woman">
+      <img src="./images/illustration-woman-online-desktop.svg" height="300" width="350" />
+    </div>
+    <div class="card__image card__image--box">
+      <img src="./images/illustration-box-desktop.svg" height="150" width="150" />
+    </div>
+    <div class="card__faqs">
+      <h2 class="card__title">
+        FAQ
+      </h2>
+      <article class="card__section">
+        <div class="card__question">
+          <h3 class="question__title">
             How many team members can I invite?
           </h3>
-          <p class="card__answer">
-              You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
-          </p>
-        </article>
-        <article class="card__section">
-          <h3 class="card__question">
+          <svg class="question__icon" xmlns="http://www.w3.org/2000/svg">
+            <image href="./images/icon-arrow-down.svg" height="10" width="12" />
+          </svg>
+        </div>
+        <p class="question__answer question__answer--hide">
+          You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
+        </p>
+      </article>
+      <article class="card__section">
+        <div class="card__question">
+          <h3 class="question__title">
             What is the maximum file upload size?
-          </h3 class="card__question">
-          <p class="card__answer">
-            No more than 2GB. All files in your account must fit your allotted storage space.
-          </p>
-        </article>
-      </div>
+          </h3>
+          <svg class="question__icon" xmlns="http://www.w3.org/2000/svg">
+            <image href="./images/icon-arrow-down.svg" height="10" width="12" />
+          </svg>
+        </div>
+        <p class="question__answer question__answer--hide">
+          No more than 2GB. All files in your account must fit your allotted storage space.
+        </p>
+      </article>
+      <article class="card__section">
+        <div class="card__question">
+          <h3 class="question__title">
+            How do I reset my password?
+          </h3>
+          <svg class="question__icon" xmlns="http://www.w3.org/2000/svg">
+            <image href="./images/icon-arrow-down.svg" height="10" width="12" />
+          </svg>
+        </div>
+        <p class="question__answer question__answer--hide">
+          Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to
+          you.
+        </p>
+      </article>
+      <article class="card__section">
+        <div class="card__question">
+          <h3 class="question__title">
+            Can I cancel my subscription?
+          </h3>
+          <svg class="question__icon" xmlns="http://www.w3.org/2000/svg">
+            <image href="./images/icon-arrow-down.svg" height="10" width="12" />
+          </svg>
+        </div>
+        <p class="question__answer question__answer--hide">
+          Yes! Send us a message and we’ll process your request no questions asked.
+        </p>
+      </article>
+      <article class="card__section">
+        <div class="card__question">
+          <h3 class="question__title">
+            Do you provide additional support?
+          </h3>
+          <svg class="question__icon" xmlns="http://www.w3.org/2000/svg">
+            <image href="./images/icon-arrow-down.svg" height="10" width="12" />
+          </svg>
+        </div>
+        <p class="question__answer question__answer--hide">
+          Chat and email support is available 24/7. Phone lines are open during normal business hours.
+        </p>
+      </article>
+    </div>
   </div>
 
 </body>
